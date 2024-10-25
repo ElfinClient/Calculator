@@ -1,1 +1,44 @@
-rtgiurtym8votn7ermhfv giufgvo7er gfvgdufbfdgb
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./resources/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <input type="text" pattern="[0-9]*" inputmode="numeric" class="number-input" />
+        </div>
+        <div id="logo-container">
+            <img id="logo" src="./resources/images/Logo.png"  alt="QuickCal logo">
+            <div id="error-box"></div>
+        </div>
+        <div class="keypad">
+            <button data-all-clear="#" class="span-two">AC</button>
+            <button data-delete="#" class="span-two">DEL</button>
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button data-operation="÷">÷</button>
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button data-operation="x">x</button>
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button data-operation="-">-</button>
+            <button data-number="00">00</button>
+            <button data-number="0">0</button>
+            <button data-decimal=".">.</button>
+            <button data-operation="+">+</button>
+            <button class="invisible"></button>
+            <button data-submission="#" class="span-two">=</button>
+        </div>
+    </div>
+</body>
+    <script src="./resources/script.js"></script>
+</html>
